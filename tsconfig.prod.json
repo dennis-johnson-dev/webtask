@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "module": "es2015",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "include": ["index.ts", "./lib/**/*.ts", "./test/**/*.ts"],
+  "compileOnSave": false
+}

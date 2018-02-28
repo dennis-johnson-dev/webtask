@@ -1,0 +1,39 @@
+{
+  "name": "webtask",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/songawee/webtask.git",
+  "author": "Dennis Johnson <songawee@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "rollup -c",
+    "predeploy": "yarn build",
+    "deploy": "wt create dist/index.js --name=webtask-test --secrets-file .env",
+    "test": "mocha --opts mocha.opts $(find test -name '*.ts')",
+    "test:watch": "yarn test --watch",
+    "wt": "wt"
+  },
+  "devDependencies": {
+    "@types/chai": "4.1.2",
+    "@types/chai-as-promised": "7.1.0",
+    "@types/joi": "13.0.5",
+    "@types/mocha": "2.2.48",
+    "@types/nock": "9.1.2",
+    "@types/node": "^9.4.6",
+    "@types/request": "2.47.0",
+    "chai": "4.1.2",
+    "chai-as-promised": "7.1.1",
+    "dotenv": "5.0.1",
+    "mocha": "5.0.1",
+    "nock": "9.2.3",
+    "rollup": "^0.56.3",
+    "rollup-plugin-typescript": "^0.8.1",
+    "ts-node": "5.0.0",
+    "typescript": "^2.7.2",
+    "wt-cli": "^9.0.1"
+  },
+  "dependencies": {
+    "request": "2.83.0"
+  }
+}
