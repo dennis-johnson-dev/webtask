@@ -6,6 +6,8 @@ Results will look similar to:
 
 ![stats](docs/result.png)
 
+An example repo that you can make prs against and see the files change, visit https://github.com/songawee/webpack-example/pull/2.
+
 ## Input
 
 This is the shape of the data required by the webtask as a POST request:
